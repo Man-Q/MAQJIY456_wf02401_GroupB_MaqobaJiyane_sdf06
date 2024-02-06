@@ -1,0 +1,153 @@
+:root {
+    font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", Arial, sans-serif;
+    min-height: 100vh;
+    background-color: black;
+    color: #fafafa;
+    padding-bottom: 3rem;
+}
+
+/* Base Profile Styles */
+.profile {
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.profile-image {
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.profile-image img {
+    flex: 1; /* Take 1/3 of the available space */
+    margin-right: 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Apply focus effect */
+img:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 0 3px rgb(0, 255, 221); /* Add a blue box-shadow when focused */
+}
+
+.profile-user-settings{
+    flex: 2; /* Take 1/3 of the available space */
+    margin-right: 20px;
+    flex-direction: row; /* Stack children vertically */
+}
+
+.profile-stats li{
+    list-style: none;
+    flex: 3; /* Take 1/3 of the available space */
+    margin-right: 20px;
+}
+
+.profile-stats{
+    flex-direction: row; /* Stack children vertically */
+}
+
+.btn {
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    text-align: center;
+    background-color: #262626;
+    color: #fafafa;
+}
+
+.profile-edit-btn{
+    border: none;
+}
+
+.profile-settings-btn{
+    border: none;
+    background: black;
+    width: 30px;
+    font-size: 30px;
+    margin-right: 15px;
+}
+
+/* Image Styles */
+img {
+    display: block;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+/* Gallery Styles */
+.gallery {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2px;
+    justify-content: center;
+}
+
+.gallery-item {
+    width: 100%;
+    position: relative;
+}
+
+.gallery-item:hover .gallery-item-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5px;
+    z-index: 2;
+    display: flex;
+}
+
+.gallery-item-type {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    z-index: 2;
+    margin-right: 30px;
+}
+
+.gallery-image {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.gallery-item-info {
+    display: none;
+}
+
+.gallery-item-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.gallery-item-info li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    .gallery-image .profile{
+        width: 100%;
+        max-width: 100%;
+    }
+   
+}
