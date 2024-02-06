@@ -4,8 +4,7 @@
 ## **6.15 CodeSpace Pets Instagram Profile Project**
 
 ### Overview
-
-
+![Alt text](c.png)
 ### Reflections
 
 #### Areas of Mastery
