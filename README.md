@@ -72,4 +72,4 @@ Sure! Here are the responsive design implementations listed in first-person form
 - **Creative Design Choices**:
      While the current design is functional, I see opportunities to enhance its visual appeal and creativity. Exploring different color schemes, typography choices, and layout options could make the design more visually appealing. Incorporating more visual elements such as icons, illustrations, or background patterns could also make the design more engaging. Additionally, experimenting with different hover effects, transitions, and animations could add polish and sophistication to the user experience.
 #### Overall Learning Experience
-I learnt that the is a lot which I haven't learned, and as such, I need to go back to my notes.
+    I learnt that the is a lot which I haven't learned, and as such, I need to go back to my notes.
