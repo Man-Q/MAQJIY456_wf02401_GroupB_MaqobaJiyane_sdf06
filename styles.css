@@ -1,3 +1,4 @@
+/* Base Styles */
 :root {
     font-size: 10px;
 }
@@ -16,7 +17,7 @@ body {
     padding-bottom: 3rem;
 }
 
-/* Base Profile Styles */
+/* Profile Styles */
 .profile {
     display: flex;
     max-width: 800px;
@@ -30,33 +31,25 @@ body {
 }
 
 .profile-image img {
-    flex: 1; /* Take 1/3 of the available space */
-    margin-right: 20px;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-/* Apply focus effect */
-img:focus {
-    outline: none; /* Remove default focus outline */
-    box-shadow: 0 0 0 3px rgb(0, 255, 221); /* Add a blue box-shadow when focused */
-}
-
-.profile-user-settings{
-    flex: 2; /* Take 1/3 of the available space */
+.profile-user-settings {
+    flex: 2;
     margin-right: 20px;
-    flex-direction: row; /* Stack children vertically */
+    flex-direction: row;
 }
 
-.profile-stats li{
+.profile-stats li {
     list-style: none;
-    flex: 3; /* Take 1/3 of the available space */
+    flex: 3;
     margin-right: 20px;
 }
 
-.profile-stats{
-    flex-direction: row; /* Stack children vertically */
+.profile-stats {
+    flex-direction: row;
 }
 
 .btn {
@@ -69,11 +62,11 @@ img:focus {
     color: #fafafa;
 }
 
-.profile-edit-btn{
+.profile-edit-btn {
     border: none;
 }
 
-.profile-settings-btn{
+.profile-settings-btn {
     border: none;
     background: black;
     width: 30px;
@@ -96,6 +89,7 @@ img:hover {
     grid-template-columns: auto auto auto;
     gap: 2px;
     justify-content: center;
+    padding: 0;
 }
 
 .gallery-item {
@@ -143,7 +137,7 @@ img:hover {
     margin-right: 10px;
 }
 
-
+/* Spinning Wheel Styles */
 .wrapper {
     margin-top: 30px;
     height: 100%;
@@ -200,10 +194,11 @@ img:hover {
 }
 
 /* Responsive Styles */
-@media only screen and (max-width: 768px) {
-    .gallery-image .profile{
+@media only screen and (max-width: 1000px) {
+    .gallery-item img,
+    .profile img,
+    .gallery-image img .wrapper{
         width: 100%;
         max-width: 100%;
     }
-   
 }
