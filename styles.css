@@ -143,6 +143,62 @@ img:hover {
     margin-right: 10px;
 }
 
+
+.wrapper {
+    margin-top: 30px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+
+.spinning-wheel {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #3f5266; /* Change the color as needed */
+    position: relative;
+    animation: spin 2s linear infinite;
+}
+
+.gear {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #fff; /* Change the color as needed */
+    border-radius: 50%;
+    animation: spin-gear 2s linear infinite;
+}
+
+.gear:nth-child(1) {
+    top: 10px;
+    left: 40px;
+}
+
+.gear:nth-child(2) {
+    bottom: 10px;
+    left: 40px;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin-gear {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
 /* Responsive Styles */
 @media only screen and (max-width: 768px) {
     .gallery-image .profile{
